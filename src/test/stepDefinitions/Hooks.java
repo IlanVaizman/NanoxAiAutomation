@@ -13,10 +13,6 @@ public class Hooks extends ClassTestSetupWeb {
 
     @After
     public static void tearDown() {
-
-        if (driver != null) {
-            driver.quit();
-        }
-
+        ClassTestSetupWeb.closeBrowser();
     }
 }

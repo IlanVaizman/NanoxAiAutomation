@@ -1,4 +1,4 @@
 Feature: login
 
   Scenario: login with valid credentials
-    Given User is on login screen
+    Given User clicks on the login button
