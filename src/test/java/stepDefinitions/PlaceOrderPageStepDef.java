@@ -23,9 +23,8 @@ public class PlaceOrderPageStepDef {
     }
 
     @And("User verifies the success message title {string}")
-    public void verifySuccessMessageTitle(String title) throws InterruptedException {
+    public void verifySuccessMessageTitle(String title) {
         placeOrderPage.verifySuccessMessageTitle(title);
-        Thread.sleep(10000);
     }
 
 }

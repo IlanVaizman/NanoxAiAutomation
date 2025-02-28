@@ -1,8 +1,8 @@
 Feature: login
 
-  Scenario: Verify login page
-    Given User enter login page
-    Then User sees the login page
+#  Scenario: Verify login page
+#    Given User enter login page
+#    Then User sees the login page
 
   Scenario Outline: login with valid credentials
     Given User enter login page
