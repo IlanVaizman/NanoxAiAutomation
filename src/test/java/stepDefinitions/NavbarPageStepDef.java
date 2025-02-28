@@ -14,6 +14,11 @@ public class NavbarPageStepDef {
         navbarPage.clickLoginBtn();
     }
 
+    @Given("User enter cart page")
+    public void clickCartBtn() {
+        navbarPage.clickCartBtn();
+    }
+
     @Then("User connect msg is {string}")
     public void verifyUserName(String name) {
         navbarPage.verifyUserName(name);
