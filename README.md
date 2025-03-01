@@ -23,6 +23,8 @@ This is a Selenium-based test automation framework using Cucumber and Java.
 
    ```sh
    mvn clean test 
+   OR
+   mvn clean test -Dbrowser=<browser_name>
    ```
    
 3. **View the test report:** 
