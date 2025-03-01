@@ -12,5 +12,7 @@ Feature: add item to cart
     And User adds the item to the cart
     Given User enter cart page
     And User clicks on place the order
-    Then User fills the details on the place order page with "Ilan", "Israel", "Tel-Aviv", "456456", "02", "2025"
+    Then User fills in the order details:
+      | Name  | Country | City    | Credit Card | Month | Year |
+      | Ilan  | Israel  | Tel-Aviv | 456456     | 02    | 2025 |
     And User verifies the success message title "Thank you for your purchase!"
