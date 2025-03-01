@@ -56,6 +56,7 @@ This is a Selenium-based test automation framework using Cucumber and Java.
 ## Expanding coverage and edge cases
 - Validate data consistency between frontend, backend, and database.
 - Add negative scenarios to test error handling(UI and API).
+- Verifying how the system handles extreme input values and edge cases.
 
 ## Understanding the system that is being tested
 - Manually explore the application to understand  user workflows, and key functionalities.
