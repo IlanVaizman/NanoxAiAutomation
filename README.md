@@ -26,7 +26,7 @@ This is a Selenium-based test automation framework using Cucumber and Java.
    ```
    
 3. **View the test report:** 
-   Open the `index.html` file located in the `target/cucumber-reports` directory.
+   Open the `cucumber-reports` file located in the `target/cucumber-reports` directory.
    ```sh
     start target/cucumber-reports.html
    ```
