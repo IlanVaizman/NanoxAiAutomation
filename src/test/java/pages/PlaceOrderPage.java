@@ -96,6 +96,6 @@ public class PlaceOrderPage {
         Assert.assertTrue("Name is not correct " + name, text.contains("Name: " + name));
 
         String todayDate = LocalDate.now().format(DateTimeFormatter.ofPattern("d/M/yyyy"));
-        Assert.assertTrue("Date is not correct " + todayDate, text.contains("Date: " + todayDate));
+        Assert.assertTrue("Date is not correct", text.contains("Date: " + todayDate));
     }
 }
