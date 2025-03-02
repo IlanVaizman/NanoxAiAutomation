@@ -25,9 +25,11 @@ public class PlaceOrderPageStepDef {
         placeOrderPage.clickPurchaseBtn();
     }
 
-    @And("User verifies the success message title {string}")
-    public void verifySuccessMessageTitle(String title) {
-        placeOrderPage.verifySuccessMessageTitle(title);
+    @And("User verifies the success message title")
+    public void verifySuccessMessageTitle(DataTable table) {
+        Map<String, String> msgDetails = table.asMaps().get(0);
+        placeOrderPage.verifySuccessMessageTitle(msgDetails.get("Title"));
+        placeOrderPage.verifySuccessMessageDetails(msgDetails.get("Credit Card"), msgDetails.get("Name"));
     }
 
 }

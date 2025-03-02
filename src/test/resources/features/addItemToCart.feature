@@ -13,6 +13,8 @@ Feature: add item to cart
     Given User enter cart page
     And User clicks on place the order
     Then User fills in the order details:
-      | Name  | Country | City    | Credit Card | Month | Year |
-      | Ilan  | Israel  | Tel-Aviv | 456456     | 02    | 2025 |
-    And User verifies the success message title "Thank you for your purchase!"
+      | Name | Country | City     | Credit Card | Month | Year |
+      | Ilan | Israel  | Tel-Aviv | 456456      | 02    | 2025 |
+    And User verifies the success message title
+      | Title                        | Credit Card | Name |
+      | Thank you for your purchase! | 456456      | Ilan |

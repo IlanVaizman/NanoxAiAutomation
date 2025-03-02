@@ -32,6 +32,7 @@ public class CartPage {
     }
 
     public void placeOrder() {
+        wait.until(ExpectedConditions.visibilityOfAllElements(itemRow));
         orderModalTrigger.click();
     }
 
