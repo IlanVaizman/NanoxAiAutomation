@@ -37,6 +37,7 @@ This is a Selenium-based test automation framework using Cucumber and Java.
 ### Tool Enhancements
 - Add Selenide framework for better stability and readability.
 - Add Allure report for test results history.
+- Add Log4j for better logging.
 
 ### Test Coverage Expansion
 - Add API tests to validate the backend.
