@@ -86,7 +86,7 @@ public class PlaceOrderPage {
         Pattern idPattern = Pattern.compile("Id:\\s(\\d+)");
         Matcher idMatcher = idPattern.matcher(text);
 
-        Assert.assertTrue("Id order does not contain a number!", idMatcher.find());
+        Assert.assertTrue("Id order is incorrect", idMatcher.find());
         Assert.assertTrue("Total amount in not correct "  + ItemPricePage ,
                 text.contains("Amount: " + ItemPricePage + " USD"));
 
@@ -95,7 +95,7 @@ public class PlaceOrderPage {
 
         Assert.assertTrue("Name is not correct " + name, text.contains("Name: " + name));
 
-        String todayDate = LocalDate.now().format(DateTimeFormatter.ofPattern("M/d/yyyy"));
+        String todayDate = LocalDate.now().format(DateTimeFormatter.ofPattern("d/M/yyyy"));
         Assert.assertTrue("Date is not correct " + todayDate, text.contains("Date: " + todayDate));
     }
 }
